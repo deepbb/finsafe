@@ -1,0 +1,243 @@
+/* Scrolling text */
+
+.our1{
+  background-color: #BB710D;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+  text-decoration: none;
+}
+.our2{
+  background-color: #BF570D;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+.our3{
+  background-color: #458112;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+.our4{
+  background-color: #BC331C;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+.our5{
+  background-color:#E29513;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+.our6{
+  
+  background-color:#CC4922;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+.our7{
+  background-color: #423184;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+.our8{
+  background-color: #BB710D;
+  color: white;
+  padding: 1rem;
+  height: 7rem;
+}
+
+.ours {
+  max-width: 1400px;
+  /* margin: 0 auto;*/
+  display: grid;
+  margin: 10px 25px 10px 25px;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+}
+.ouricons{
+  font-size: 25px;
+  color: #fff;
+}
+.scroll-left {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-color: #072f5f;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.banner-title{
+  font-size: 30px;
+  font-weight: 800;
+  color: #923300;
+}
+.banner-description{
+  font-size: 25px;
+  font-weight: 700;
+  color: #160057;
+}
+
+.scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  line-height: 50px;
+  text-align: left;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-left 20s linear infinite;
+  -webkit-animation: scroll-left 20s linear infinite;
+  animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+/* image Silders in Homepage in top header */
+@media only screen and (max-width: 700px) {
+  .overlay_text {
+    font-size: 10px;
+  }
+  .text_overlay {
+    background: white;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+    z-index: 60;
+    position: absolute;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 80%;
+  }
+.banner-title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #923300;
+}
+.banner-description{
+  font-size: 13px;
+  font-weight: 600;
+  color: #160057;
+}
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+  .overlay_text {
+    font-size: 15px;
+  }
+  .text_overlay {
+    background: white;
+    text-align: center;
+    width: 60%;
+    border-radius: 20px;
+    z-index: 60;
+    position: absolute;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 80%;
+  }
+.banner-title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #923300;
+}
+.banner-description{
+  font-size: 13px;
+  font-weight: 600;
+  color: #160057;
+}
+
+}
+
+.slider_image {
+  width: 100%;
+  aspect-ratio: 2.8;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 700px) {
+  .overlay_text {
+    font-size: 15px;
+  }
+  .text_overlay {
+    background: white;
+    text-align: center;
+    width: 60%;
+    border-radius: 20px;
+    z-index: 60;
+    position: absolute;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 80%;
+  }
+  
+.banner-title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #923300;
+}
+.banner-description{
+  font-size: 13px;
+  font-weight: 500;
+  color: #160057;
+}
+
+}
+
+.splider_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_overlay {
+  background: white;
+  text-align: center;
+  width: 50%;
+  border-radius: 30px;
+  z-index: 40;
+  position: absolute;
+  padding: 10px;
+  opacity: 80%;
+}

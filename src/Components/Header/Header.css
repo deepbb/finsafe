@@ -1,0 +1,154 @@
+.top_header {
+  background-color: #072f5f;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+  min-width: 300px;
+  position: relative;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_button {
+  color: #fff;
+}
+
+.social_icons {
+  color: #fff;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.whatsapp {
+  font-size: 20px;
+}
+.linkedin {
+  font-size: 20px;
+}
+.mail {
+  font-size: 25px;
+}
+.phone {
+  font-size: 20px;
+}
+.facebook {
+  font-size: 20px;
+}
+
+.social_icon_box {
+  display: flex;
+  width: 20%;
+  min-width: 100px;
+  justify-content: space-between;
+}
+
+.mid_header {
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+  min-width: 200px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    height: 40%;
+    width: 200px;
+    transition: all 0.5s;
+  }
+
+  .logo:hover {
+    height: 50%;
+    width: 220px;
+  }
+
+  .mid_header {
+    min-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .mobile_hide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .logo {
+    height: 90%;
+    width: 360px;
+    transition: all 0.5s;
+  }
+
+  .logo:hover {
+    height: 100%;
+    width: 380px;
+  }
+}
+
+.sign_in_out {
+  position: relative;
+  margin-right: 70px;
+}
+
+.sign_in_out:hover {
+  cursor: pointer;
+}
+
+.right_button {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+.right_button:hover {
+  cursor: pointer;
+}
+
+.sign_in_list {
+  list-style-type: none;
+  padding-left: 5px;
+  width: 200px;
+}
+
+.dropdown_sign_in {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  background-color: #072f5f;
+  color: white;
+}
+
+.sign_in_out:hover > .dropdown_sign_in {
+  display: block;
+}
+
+.dropdown_sign_in:hover {
+  display: block;
+}
+
+.mid-left{
+  width : 65%;
+}
+.mid-right{
+  height : 100px;
+  width : 35%;
+  flex-direction: column;
+  font-Size:20px;
+  color:#000;
+}
+.signin-button{
+  height: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border: 2px solid #072f5f;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+}

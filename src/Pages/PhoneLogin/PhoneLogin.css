@@ -1,0 +1,49 @@
+.login_text {
+  font-size: 20px;
+  color: #160057;
+}
+
+.bottom_text {
+  margin: 0 auto;
+  font-size: 15px;
+  width: fit-content;
+}
+
+.logininput {
+  height: 30px;
+  width: 100%;
+  background-color: #dddddd;
+  border: none;
+}
+.login_header{
+  color: #923300;
+}
+.button_login {
+  background-color: #072f5f;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.button_login:hover {
+  background-color: #fff;
+  border: solid #072f5f;
+  cursor: pointer;
+  color: #072f5f;
+}
+
+.password_eye {
+  font-size: 30px;
+  margin-left: 10px;
+  position: absolute;
+  right: 2px;
+}
+
+.header_text {
+  width: fit-content;
+  margin: 0 auto;
+  font-style: 50px;
+  font-weight: 700;
+}
